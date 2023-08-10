@@ -1,0 +1,11 @@
+{
+    "Name": "Portainer",
+    "Id": "d524c9b6-9f59-4467-b6c2-485f5f41556e",
+    "Description": "Web UI platform to manage docker containers",
+    "Type": "compose",
+    "ComposePath": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/portainer/docker-compose.yml",
+    "AdditionalFiles": [],
+    "Configs": [
+    ],
+    "OptionalModules":[]
+}

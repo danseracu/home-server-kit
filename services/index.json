@@ -1,0 +1,13 @@
+[
+    "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/grafana/manifest.json",
+    "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/openvpn/manifest.json",
+    "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/organizr/manifest.json",
+    "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/plex/manifest.json",
+    "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/portainer/manifest.json",
+    "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/prometheus/manifest.json",
+    "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/qbittorrent/manifest.json",
+    "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/radarr/manifest.json",
+    "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/sonarr/manifest.json",
+    "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/vault/manifest.json",
+    "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/wetty/manifest.json"
+]

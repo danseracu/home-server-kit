@@ -1,0 +1,15 @@
+{
+    "Name": "Security",
+    "Id": "eb73a456-6ed7-4947-8c1f-c626381ac17a",
+    "Description": "Tools to store sensitive data and secrets, and to provide secure access to resources",
+    "Services":[
+        {
+            "ManifestUrl": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/vault/manifest.json",
+            "Required": false
+        },
+        {
+            "ManifestUrl": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/openvpn/manifest.json",
+            "Required": false
+        }
+    ]
+}

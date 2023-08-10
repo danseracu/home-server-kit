@@ -1,0 +1,20 @@
+{
+    "Name": "Vault",
+    "Id": "8bdfa83d-a140-4248-9367-fb92a236c73d",
+    "Description": "HashiCorp Vault deployment. Secrets and passwords store. Authentication automatization",
+    "Type": "compose",
+    "ComposePath": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/vault/docker-compose.yml",
+    "AdditionalFiles": [
+        "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/vault/.env",
+        "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/vault/vault.json"
+    ],
+    "Configs": [
+        {
+            "Key":"ROOT_PATH",
+            "Required": false,
+            "Type": "path",
+            "Description": "The root directory under which to store vault data"
+        }
+    ],
+    "OptionalModules":[]
+}

@@ -1,0 +1,23 @@
+{
+    "Name": "Media management",
+    "Id": "b58b7999-5297-4afb-9492-8eaaffd9e54d",
+    "Description": "Everything you need to be up to date with all your movies, tv shows and songs",
+    "Services":[
+        {
+            "ManifestUrl": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/qbittorrent/manifest.json",
+            "Required": false
+        },
+        {
+            "ManifestUrl": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/plex/manifest.json",
+            "Required": false
+        },
+        {
+            "ManifestUrl": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/radarr/manifest.json",
+            "Required": false
+        },
+        {
+            "ManifestUrl": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/sonarr/manifest.json",
+            "Required": false
+        }
+    ]
+}

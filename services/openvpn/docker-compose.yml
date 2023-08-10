@@ -9,4 +9,4 @@ services:
      - "5478:1194/udp"
     restart: unless-stopped
     volumes:
-     - ./openvpn-data/conf:/etc/openvpn
+     - ${ROOT}:/etc/openvpn

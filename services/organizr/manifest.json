@@ -1,0 +1,41 @@
+{
+    "Name": "Organizr",
+    "Id": "91a50e9a-0f33-4e68-b516-f0d7343a06c0",
+    "Description": "Web UI platform that unites all your hosted services under one site",
+    "Type": "compose",
+    "ComposePath": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/organizr/docker-compose.yml",
+    "AdditionalFiles": ["https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/organizr/.env"],
+    "Configs": [
+        {
+            "Key":"PUID",
+            "Required": false,
+            "Type": "number",
+            "Description": "The user id under which to run the ssh session"
+        },
+        {
+            "Key":"PGID",
+            "Required": false,
+            "Type": "number",
+            "Description": "The user group id under which to run the ssh session"
+        },
+        {
+            "Key":"TZ",
+            "Required": false,
+            "Type": "string",
+            "Description": "The timezone local to the user"
+        },
+        {
+            "Key":"HOST",
+            "Required": false,
+            "Type": "string",
+            "Description": "Hostname "
+        },
+        {
+            "Key":"ROOT",
+            "Required": false,
+            "Type": "path",
+            "Description": "Path to store organizr config files"
+        }
+    ],
+    "OptionalModules":[]
+}

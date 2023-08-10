@@ -1,0 +1,5 @@
+[
+    "https://raw.githubusercontent.com/danseracu/home-server-kit/main/stacks/infrastructure/manifest.json",
+    "https://raw.githubusercontent.com/danseracu/home-server-kit/main/stacks/media-management/manifest.json",
+    "https://raw.githubusercontent.com/danseracu/home-server-kit/main/stacks/security/manifest.json"
+]

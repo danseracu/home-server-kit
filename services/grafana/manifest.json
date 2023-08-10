@@ -1,0 +1,17 @@
+{
+    "Name": "Grafana",
+    "Id": "c92b1468-e26b-4175-847e-2051ba043f9e",
+    "Description": "Metric collection and data visualisation server",
+    "Type": "compose",
+    "ComposePath": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/grafana/docker-compose.yml",
+    "AdditionalFiles": ["https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/grafana/.env"],
+    "Configs": [
+        {
+            "Key":"GF_SERVER_ROOT_URL",
+            "Required": false,
+            "Type": "string",
+            "Description": "Grafana server root url"
+        }
+    ],
+    "OptionalModules":[]
+}

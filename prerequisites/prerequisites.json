@@ -1,8 +1,0 @@
-[
-    {
-        "Name": "Docker & Docker Compose",
-        "InstallScript": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/prerequisites/docker/install.sh",
-        "CheckScript": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/prerequisites/docker/check.sh",
-        "Required": true
-    }
-]

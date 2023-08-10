@@ -1,0 +1,41 @@
+{
+    "Name": "Wetty",
+    "Id": "0242c093-31e4-41f2-a3f5-130affeea624",
+    "Description": "An ssh client directly in the browser",
+    "Type": "compose",
+    "ComposePath": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/wetty/docker-compose.yml",
+    "AdditionalFiles": ["https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/wetty/.env"],
+    "Configs": [
+        {
+            "Key":"PUID",
+            "Required": false,
+            "Type": "number",
+            "Description": "The user id under which to run the ssh session"
+        },
+        {
+            "Key":"PGID",
+            "Required": false,
+            "Type": "number",
+            "Description": "The user group id under which to run the ssh session"
+        },
+        {
+            "Key":"REMOTE_SSH_USER",
+            "Required": true,
+            "Type": "string",
+            "Description": "The user name under which to open the ssh session"
+        },
+        {
+            "Key":"REMOTE_SSH_SERVER",
+            "Required": true,
+            "Type": "string",
+            "Description": "The ip address or hostname of the host server"
+        },
+        {
+            "Key":"REMOTE_SSH_PORT",
+            "Required": false,
+            "Type": "number",
+            "Description": "The port under which to connect"
+        }
+    ],
+    "OptionalModules":[]
+}

@@ -1,0 +1,8 @@
+{
+    "Name": "Docker & Docker Compose",
+    "InstallScript": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/prerequisites/docker/install.sh",
+    "CheckScript": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/prerequisites/docker/check.sh",
+    "Required": true,
+    "Id": "15237e96-cfda-47b2-b134-fea248bdfacf",
+    "Description": "Includes the docker and docker compose engines"
+}

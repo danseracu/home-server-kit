@@ -1,0 +1,17 @@
+{
+    "Name": "OpenVPN",
+    "Id": "8680986c-177a-4fc0-ae0e-d7b78362a63f",
+    "Description": "OpenVPN server allowing a private VPN connection to your home server",
+    "Type": "compose",
+    "ComposePath": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/openvpn/docker-compose.yml",
+    "AdditionalFiles": ["https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/openvpn/.env"],
+    "Configs": [
+        {
+            "Key":"ROOT",
+            "Required": false,
+            "Type": "path",
+            "Description": "Root path to store openvpn configuration files"
+        }
+    ],
+    "OptionalModules":[]
+}

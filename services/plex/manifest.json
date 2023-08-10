@@ -1,0 +1,47 @@
+{
+    "Name": "Plex",
+    "Id": "f9434c60-4267-4795-8790-f1f1d087adb0",
+    "Description": "Media library, player and streamer.",
+    "Type": "compose",
+    "ComposePath": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/plex/docker-compose.yml",
+    "AdditionalFiles": ["https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/plex/.env"],
+    "Configs": [
+        {
+            "Key":"TZ",
+            "Required": false,
+            "Type": "string",
+            "Description": "The timezone local to the user"
+        },
+        {
+            "Key":"PLEX_CLAIM",
+            "Required": true,
+            "Type": "string",
+            "Description": "Plex api claim. Obtain from https://www.plex.tv/claim"
+        },
+        {
+            "Key":"DB",
+            "Required": false,
+            "Type": "path",
+            "Description": "Path to store plex database"
+        },
+        {
+            "Key":"TRANSCODE",
+            "Required": false,
+            "Type": "path",
+            "Description": "Path to store transcoding files"
+        },
+        {
+            "Key":"DATA",
+            "Required": false,
+            "Type": "path",
+            "Description": "Path to store library data"
+        },
+        {
+            "Key":"MEDIA",
+            "Required": false,
+            "Type": "path",
+            "Description": "Path to store library media"
+        }
+    ],
+    "OptionalModules":[]
+}

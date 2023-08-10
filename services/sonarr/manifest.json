@@ -1,0 +1,41 @@
+{
+    "Name": "Sonarr",
+    "Id": "008aee85-1c6a-426e-b7ed-c655fb9b8c18",
+    "Description": "Automatet downloading of new tv series seasons, tracking and scheduling.",
+    "Type": "compose",
+    "ComposePath": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/sonarr/docker-compose.yml",
+    "AdditionalFiles": ["https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/sonarr/.env"],
+    "Configs": [
+        {
+            "Key":"PUID",
+            "Required": false,
+            "Type": "number",
+            "Description": "The user id under which to run the ssh session"
+        },
+        {
+            "Key":"PGID",
+            "Required": false,
+            "Type": "number",
+            "Description": "The user group id under which to run the ssh session"
+        },
+        {
+            "Key":"TZ",
+            "Required": false,
+            "Type": "string",
+            "Description": "The timezone local to the user"
+        },
+        {
+            "Key":"ROOT",
+            "Required": true,
+            "Type": "path",
+            "Description": "Path to store sonarr data and tv series"
+        },
+        {
+            "Key":"DOWNLOADS",
+            "Required": false,
+            "Type": "path",
+            "Description": "Path to store new downloads"
+        }
+    ],
+    "OptionalModules":[]
+}

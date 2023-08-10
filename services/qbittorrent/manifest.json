@@ -1,0 +1,53 @@
+{
+    "Name": "Qbittorrent",
+    "Id": "956845e8-e76c-43c0-8069-b2d263a33d60",
+    "Description": "Lightweight torrent client, with Web UI and automatic tags management",
+    "Type": "compose",
+    "ComposePath": "https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/qbittorrent/docker-compose.yml",
+    "AdditionalFiles": ["https://raw.githubusercontent.com/danseracu/home-server-kit/main/services/qbittorrent/.env"],
+    "Configs": [
+        {
+            "Key":"PUID",
+            "Required": false,
+            "Type": "number",
+            "Description": "The user id under which to run the ssh session"
+        },
+        {
+            "Key":"PGID",
+            "Required": false,
+            "Type": "number",
+            "Description": "The user group id under which to run the ssh session"
+        },
+        {
+            "Key":"TZ",
+            "Required": false,
+            "Type": "string",
+            "Description": "The timezone local to the user"
+        },
+        {
+            "Key":"WEBUI_PORT",
+            "Required": false,
+            "Type": "number",
+            "Description": "Port on which to expose Web UI"
+        },
+        {
+            "Key":"DOWNLOADS",
+            "Required": false,
+            "Type": "path",
+            "Description": "Path to store new downloads"
+        },
+        {
+            "Key":"CONFIG",
+            "Required": false,
+            "Type": "path",
+            "Description": "Path to store config files"
+        },
+        {
+            "Key":"MEDIA",
+            "Required": false,
+            "Type": "path",
+            "Description": "Path to store completed downloads"
+        }
+    ],
+    "OptionalModules":[]
+}

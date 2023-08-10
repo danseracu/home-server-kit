@@ -1,0 +1,2 @@
+- swapping values in config files
+- proxy deploy (subdomains)

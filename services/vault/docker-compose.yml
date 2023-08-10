@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  vault-server:
+    image: vault:1.13.3
+    container_name: vault-server
+    ports:
+      - "80:8200"
+    restart: always
+    volumes:
+      - ${ROOT_PATH}/logs:/vault/logs
+      - ${ROOT_PATH}/file:/vault/file
+      - ${ROOT_PATH}:/vault/config
+    cap_add:
+      - IPC_LOCK
+    entrypoint: vault server -config=/vault/config/vault.json

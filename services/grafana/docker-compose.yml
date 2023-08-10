@@ -1,0 +1,18 @@
+version: '3.8'
+
+volumes:
+  grafana_storage: {}
+
+services:
+  
+  grafana:
+    image: grafana/grafana-enterprise
+    container_name: grafana
+    restart: unless-stopped
+    environment:
+     - GF_SERVER_ROOT_URL=${GF_SERVER_ROOT_URL}
+     - GF_INSTALL_PLUGINS=grafana-clock-panel
+    ports:
+     - '4000:3000'
+    volumes:
+     - 'grafana_storage:/var/lib/grafana'

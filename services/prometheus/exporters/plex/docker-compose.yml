@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+
+   plex-exporter:
+    image: ghcr.io/axsuul/plex-media-server-exporter
+    container_name: plex-exporter
+    restart: unless-stopped
+    expose:
+      - 9594
+    ports:
+      - "9594:9594"
+    environment:
+     - PLEX_ADDR=${PLEX_ADDR}
+     - PLEX_TOKEN=${PLEX_TOKEN}

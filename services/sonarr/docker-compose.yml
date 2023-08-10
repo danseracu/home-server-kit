@@ -1,0 +1,16 @@
+version: "3.4"
+services:
+ sonarr:
+    container_name: sonarr
+    image: linuxserver/sonarr:latest
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      - TZ=${TZ} # timezone, defined in .env
+      - PUID=${PUID} # default user id, defined in .env
+      - PGID=${PGID} # default group id, defined in .env
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ${ROOT}/config/sonarr:/config # config files
+      - ${ROOT}/tv:/tv # tv shows folder
+      - ${DOWNLOADS}:/downloads # download folder

@@ -1,0 +1,15 @@
+version: "3.4"
+services:
+ organizr:
+   container_name: organizr
+   image: organizr/organizr
+   restart: unless-stopped
+   environment:
+      - TZ=${TZ}
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - VIRTUAL_HOST=${HOST}
+   volumes:
+      - ${ROOT}:/config
+   ports:
+      - 2999:80

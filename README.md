@@ -1,4 +1,6 @@
-# Home Server Kit
+# Home Server Kit - **Work in progress**
+
+**Notice** This is a personal project i am working on for fun in my personal time. I provide no guarantees for the code here. I take NO responsibility and/or liability for how you choose to use any of the source code available here. By using any of the files available in this repository, you understand that you are AGREEING TO USE AT YOUR OWN RISK.
 
 This project is an attempt to automatise setting up a home server for hobbyists. In it's first form it consists of a script design to install and configure prerequisites, applications, containers and everything else in an automated manner. The mechanism is designed to be extensible, so new modules and services can always be added, agnostic of implementation design, as long as they conform to a few standards. For this, the repository home-server-kit will be used a single source of truth (for the time being) for retrieving the list of available modules, as well as their configurations and dependecies. 
 
